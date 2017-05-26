@@ -14,7 +14,7 @@
     }
   }
   .navbar-nav > li > a {
-    color: #ccc;
+    color: #00F;
     &:hover, &:focus {
       color: white;
     }
@@ -54,21 +54,20 @@ header ul:after {
   padding-bottom: 15%;
   width: 100%;
   background-size: cover;
-  background-image: url("images-master/header.jpg");
-  background-attachment: fixed;
+  background-image: url("header.jpg");
+  header {
+  width: 100%;
+  background-color: #00F;
+  height: 54px;
 }
 
 .main-header img {
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 25%;
   padding-top: 15%;
 }
-
-.about{
-     background-color:white;
-     color:#333;
-     padding:80px;
+  background-attachment: fixed;
 }
 
 footer {

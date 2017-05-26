@@ -12,14 +12,15 @@ input[type="submit"].btn-block{
   margin: 15px 0;
 }
 
-.container{
-  padding-bottom: 85px;
+.container.text-info{
+  padding: 60px 15px 0;
+  margin: 20px 0;
 }
 
 .page-toptweet-btn {
   display: fixed;
   border-radius: 50px;
-  background: #336699;
+  background: #33FFCC;
   width: 60px;
   height: 60px;
   transition: all 0.3s;
