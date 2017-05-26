@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+
+<section class="tweets-header">
+   <img src="<%= asset_path "birdie.png" %>">
+</section>
+
+<p><%=notice%></p>
+　<h1>一覧</h1>
+　<%= link_to "ツイートする", new_tweet_path, class: 'btn btn-default' %>
+　<% @tweets. each do |tweet| %>
+　 <div class="row">
+     <p>@ayuru:<%= tweet.content %></p>
+   　<%= link_to "編集する",edit_tweet_path(tweet.id),class: 'btn btn-default btn-sm btn-info' %>
+   　<%= link_to "削除する", tweet_path(tweet.id),method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-warning' %>
+    </div>
+   <% end %>
+   <div id="page-toptweet-btn" class="page-toptweet-btn">
+    <p><a class="move-page-top" id="move-page-top">▲</a></p>
+   </div>
+  
+  </div>
+</div>
